@@ -1,0 +1,58 @@
+body {
+    background-color: #df5a49;
+  }
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+  }
+  
+  .loader div {
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .obj1 {
+    width: 150px;
+    height: 150px;
+    animation:  animation 5s linear infinite; 
+  }
+  .obj2 {
+    width: 120px;
+    height: 120px;
+    animation:  animation 5s linear infinite; 
+  }
+  .obj3 {
+    width: 90px;
+    height: 90px;
+    animation:  animation 5s linear infinite; 
+  }
+  .obj4 {
+    width: 60px;
+    height: 60px;
+    animation:  animation 5s linear infinite; 
+  }
+  
+  @keyframes animation {
+      0% { 
+        transform: rotate(180deg);  
+      }
+      50% {
+        transform: rotate(0deg); 
+      }
+      100% {
+        transform: rotate(180deg); 
+      }
+    }
